@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Entre Duas Imagens</title>
+</head>
+<body>
+    <!-- Imagem inicial -->
+    <img id="minhaImagem" src="imagem1.jpg" alt="Primeira Imagem">
+
+    <!-- Botão para trocar a imagem -->
+    <button onclick="trocarImagem()">Trocar Imagem</button>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para trocar a imagem
+        function trocarImagem() {
+            // Seleciona a imagem pelo ID
+            var imagem = document.getElementById("minhaImagem");
+
+            // Verifica qual imagem está sendo exibida
+            if (imagem.src.endsWith("imagem1.jpg")) {
+                // Se a imagem atual for imagem1.jpg, muda para imagem2.jpg
+                imagem.src = "imagem2.jpg";
+            } else {
+                // Caso contrário, muda para imagem1.jpg
+                imagem.src = "imagem1.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
