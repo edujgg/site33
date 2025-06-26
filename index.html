@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- Imagem inicial -->
-    <img id="minhaImagem" src="imagem1.jpg" alt="Primeira Imagem">
+    <img id="minhaImagem" src="golfo.jpeg" alt="Primeira Imagem">
 
     <!-- Botão para trocar a imagem -->
     <button onclick="trocarImagem()">Trocar Imagem</button>
@@ -20,12 +20,12 @@
             var imagem = document.getElementById("minhaImagem");
 
             // Verifica qual imagem está sendo exibida
-            if (imagem.src.endsWith("imagem1.jpg")) {
-                // Se a imagem atual for imagem1.jpg, muda para imagem2.jpg
-                imagem.src = "imagem2.jpg";
+            if (imagem.src.endsWith("golfo.jpeg")) {
+                // Se a imagem atual for golfo.jpeg, muda para goo.jpeg
+                imagem.src = "goo.jpeg";
             } else {
-                // Caso contrário, muda para imagem1.jpg
-                imagem.src = "imagem1.jpg";
+                // Caso contrário, muda para golfo.jpeg
+                imagem.src = "golfo.jpeg";
             }
         }
     </script>
